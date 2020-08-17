@@ -11,8 +11,8 @@ server.use(cors);
 // server.use("/api/auth");
 
 server.get("/", (req, res) => {
-    const message = process.env.MESSAGE || "Hello from code"
-  res.status(200).json({ message, database: process.env.DB_NAME });
+  // const message = process.env.MESSAGE || "Hello from code"
+  res.status(200).json({ message: "Server is up!" });
 });
 
 module.exports = server;
